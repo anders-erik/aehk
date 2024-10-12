@@ -1,3 +1,4 @@
+#Requires AutoHotkey v2.0
 
 ; Screen Recorder - Snipping Tool
 ; Anders-Erik : 2024-10-12

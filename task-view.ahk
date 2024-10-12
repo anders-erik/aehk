@@ -1,3 +1,4 @@
+#Requires AutoHotkey v2.0
 
 ; Double Press Win for Workspace overview
 ; Anders-Erik : 2024-10-12
@@ -5,7 +6,7 @@
 ; Overview: 
 ;
 ; I had a lot of interference with the native bahavor of the win-key and as a result I opted to only implement multiple presses
-; Currently 2 or more presses will work, also allowing for a future variation
+; Currently exactly 2 presses are required to trigger the view!
 ;
 ;   FUTURE:
 ; It would be nice to prevent default win-key behavior until the end of the timer..
@@ -14,7 +15,8 @@
 ; https://www.autohotkey.com/docs/v2/lib/SetTimer.htm
 
 
-~LWin:: ; ~ seems to prevent AHK from blocking default key behavior
+~LWin:: ; '~' seems to prevent AHK from blocking default key behavior
+~Rwin::
 KeyLWin(ThisHotkey)  ; This is a named function hotkey.
 {
     static lwin_presses := 0
@@ -39,10 +41,8 @@ KeyLWin(ThisHotkey)  ; This is a named function hotkey.
 
         }
         else if lwin_presses = 3 {
-            Send "#{Tab}"
         }
         else if lwin_presses > 3 {
-            Send "#{Tab}"
         }
 
         lwin_presses := 0

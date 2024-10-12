@@ -1,14 +1,15 @@
+#Requires AutoHotkey v2.0
 
-; Switch Workspace Hotkeys
+; Switch Workspace Hotkeys - Left Win-Key
 ; Anders-Erik : 2024-10-12
 
 
 ; OVERVIEW
 ;   - enabling the switching of workspaces using the following hotkeys:
-;       - alt+win+left/right arrow
-;       - win + wheel
-;       - win + alt + wheel
-;       - win + ctrl + wheel
+;       - alt+Lwin+left/right arrow
+;       - Lwin + wheel
+;       - Lwin + alt + wheel
+;       - Lwin + ctrl + wheel
 ;
 
 

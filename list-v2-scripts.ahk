@@ -1,3 +1,4 @@
+#Requires AutoHotkey v2.0
 
 ; List all currently running AutoHotKey v2 processes/scripts
 ; Anders-Erik : 2024-10-12
@@ -16,7 +17,8 @@ for this_id in ids {
 
     ; Concatenate all titles
     if InStr(this_title, "autohotkey v2.") {
-        listStr .= this_title
+        ; Escape using backtick!
+        listStr .= this_title . "`n"
     }
 
 }
