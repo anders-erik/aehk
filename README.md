@@ -8,4 +8,5 @@ Author: Anders-Erik, 2024-10-12
 3. task-view - Triggers the workspace overview [task-view] by double pressing either of the win-keys
 4. switch-workspace - shortcuts for switching workspace using alt+win & win+mouseScroll
 5. sound - Playback & Volume Control
-
+6. Strings - quick paste common strings [email, date, time, etc]
+7. Util - fast scroll, 

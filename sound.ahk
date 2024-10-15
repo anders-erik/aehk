@@ -45,14 +45,13 @@
 +^_::
 +^NumpadSub::
 {
-	Send "{Volume_Down}" 
+	Send "{Volume_Down 2}"
 }
-
 
 +^+:: 								; AHK seems to just figure out that "+^+" means shift+ctrl+'+'. Link : https://www.autohotkey.com/board/topic/32557-how-is-hash-key-represented-in-autohotkey/
 +^NumpadAdd::
 {
-	Send "{Volume_Up}" 
+	Send "{Volume_Up 2}"
 }
 
 
